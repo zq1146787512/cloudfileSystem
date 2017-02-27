@@ -1,0 +1,72 @@
+body {
+	position: relative;
+	/* background-color: gray;  */
+}
+
+body .page0{
+	left: 300px;
+	text-align: center;
+	
+}
+body .page1{
+	position: relative;
+	width:1000px;
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+	/* left: 100px; */
+	border: 1px;
+	margin-bottom: 10px;	
+	
+	
+}
+body .page2{
+	position: relative;
+	width:1000px;
+	text-align: center;
+	font-size: 20px;
+	font-style: normal;	
+	margin-bottom: 10px;
+	/* left: 100px; */
+	
+}
+
+.page3{
+	/* border-top:10px; */
+	position: relative;
+	width:1000px;
+	left: 100px;
+	border-top: 10px;
+	border:10px;
+	/* background-color: blue; */
+	text-align: left;
+	
+	
+}
+
+.page3 .text1{
+	/* border-top:10px; */
+	position: relative;
+	width:1000px;
+	/* left: 100px; */
+	border-top: 10px;
+	border:10px;
+	background-color: blue;
+	text-align: left;
+	margin-bottom: 10px;
+	border-bottom: 10px;
+	background-color: gray;
+	
+	
+}
+
+#yun {
+	position:relative;
+	font-size: 30px;
+	text-align: left;
+}
+.page4{
+	position: relative;
+	width: 1000px;
+	text-align: right;
+}
