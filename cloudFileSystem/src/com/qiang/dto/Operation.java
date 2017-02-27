@@ -4,13 +4,15 @@ public class Operation {
 	
 	private String id;//操作的唯一id
 	private String OpType;//操作的类型
+	private String PN;
+	
 	public String getOpType() {
 		return OpType;
 	}
 	public void setOpType(String opType) {
 		OpType = opType;
 	}
-	private String PN;
+
 
 	public String getId() {
 		return id;
