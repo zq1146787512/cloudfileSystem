@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qiang.dao.COTInter">  
+    <resultMap id="BaseResultMap" type="com.qiang.dto.Operation">
+		<result column="id" property="id" jdbcType="INTEGER" />
+		<result column="Optype" property="OpType" jdbcType="VARCHAR" />
+		<result column="PN" property="PN" jdbcType="VARCHAR" />
+
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		id, Optype,PN
+	</sql>
+
+<!-- 查找操作 -->
+<select id="getOperation" resultMap="BaseResultMap" parameterType="java.lang.String">
+	select
+		<include refid="Base_Column_List" />
+		from Operation
+</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+		delete from Operation
+		where id = #{id,jdbcType=VARCHAR}  
+  	</delete>
+  	
+  	
+
+	
+  
+</mapper>
